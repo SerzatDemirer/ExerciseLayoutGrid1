@@ -1,0 +1,38 @@
+.site-header {
+    Header
+}
+
+.sidebar {
+    Sidebar
+}
+
+.Main {
+    Main Content
+}
+
+.site-footer {
+    Footer
+}
+
+
+
+.container {
+    display: grid;
+    grid-auto-rows: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "site-header site-header site-header site-header"
+        "sidebar main main main"
+        "site-footer site-footer site-footer site-footer";
+
+}
+
+.container * {
+    border: 2px solid black;
+    background-color: aquamarine;
+
+}
+
+.container {
+    grid-area: site-header;
+}
